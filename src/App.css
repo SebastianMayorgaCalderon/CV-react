@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+.underline-from-center {
+  position: relative;
+  width: fit-content;
+}
+
+.underline-from-center::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.underline-from-center:hover::after {
+  transform: scaleX(1);
+}

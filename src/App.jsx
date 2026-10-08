@@ -1,17 +1,40 @@
+import { useState } from 'react'
 import './App.css'
 import ExpSubsection from './components/ExpSubsection'
 import SectionTitle from './components/SectionTitle'
 import EducationEntry from './components/EducationEntry'
 import SkillCategory from './components/SkillCategory'
 import ContactBlock from './components/ContactBlock'
+import Toast from './components/Toast'
+import HamburgerButton from './components/HamburgerButton'
 import experience from './experience.json'
 import education from './education.json'
 import skills from './skills.json'
 
 export default function App() {
+  const [toastMessage, setToastMessage] = useState('')
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const handleCopyEmail = (email) => {
+    navigator.clipboard.writeText(email)
+    setToastMessage(`${email} copied to clipboard`)
+    setTimeout(() => setToastMessage(''), 2000)
+  }
+
   return (
-    <div className="flex min-h-screen">
-      <header className="w-1/5 bg-black flex flex-col items-center justify-between text-white pt-[8rem] pb-[4rem] sticky top-0 h-screen">
+    <div className="flex min-h-screen overflow-x-hidden">
+      <HamburgerButton open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
+      {menuOpen && (
+        <div
+          className="fixed inset-0 z-40 bg-black/50 md:hidden"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
+      <header
+        className={`bg-black flex flex-col items-center justify-between text-white pt-[8rem] pb-[4rem] fixed top-0 left-0 z-50 h-screen w-4/5 transition-transform duration-300 ease-in-out md:sticky md:z-auto md:w-1/5 md:translate-x-0 ${
+          menuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
         <div className="developer-Name-wrapper rotate-270 whitespace-nowrap text-right mt-36">
           <h1 className="text-[3.8rem] leading-[3.5rem] tracking-[0.5rem] font-bold">SEBASTIAN<br />MAYORGA</h1>
           <h3 className="text-[1.5rem] text-gray-300 tracking-[0.2rem] uppercase">Fullstack Developer<br />Frontend Specialist</h3>
@@ -19,11 +42,13 @@ export default function App() {
         <div className="contact-wrapper whitespace-nowrap text-left">
           <ContactBlock
             title="Contact"
-            lines={['+506 8761 5728', 'sebasmayorga7@gmail.com', 'sebasmayorga708@gmail.com']}
+            lines={['+506 8761 5728', 'sebasmayorga7@gmail.com', 'sebasmayorga708@gmail.com', 'github.com/SebastianMayorgaCalderon']}
+            onEmailClick={handleCopyEmail}
           />
           <ContactBlock
             title="Referrals"
             className="mt-8"
+            onEmailClick={handleCopyEmail}
             lines={[
               'mauricio.poveda@gmail.com',
               'ljpearly@gmail.com',
@@ -34,8 +59,8 @@ export default function App() {
           />
         </div>
       </header>
-      <main className="w-4/5 pt-[10rem] ">
-        <article className="w-3/5 mx-auto">
+      <main className="w-full md:w-4/5 pt-[10rem] pb-[10rem]">
+        <article className="w-[92%] sm:w-4/5 md:w-4/5 lg:w-3/5 mx-auto">
           <SectionTitle>About Me</SectionTitle>
           <p className="text-[1.2rem] text-gray-700 leading-relaxed">
             Full-stack developer with 5+ years of experience building and maintaining web and mobile applications across the JavaScript/TypeScript and
@@ -46,7 +71,7 @@ export default function App() {
           </p>
         </article>
         <br />
-        <article className="w-3/5 mx-auto">
+        <article className="w-[92%] sm:w-4/5 md:w-4/5 lg:w-3/5 mx-auto">
           <SectionTitle>Education</SectionTitle>
           {education.map((edu, index) => (
             <div key={edu.institution}>
@@ -56,7 +81,7 @@ export default function App() {
           ))}
         </article>
         <br />
-        <article className="w-3/5 mx-auto">
+        <article className="w-[92%] sm:w-4/5 md:w-4/5 lg:w-3/5 mx-auto">
           <SectionTitle>Experience</SectionTitle>
           {experience.map((exp) => (
             <ExpSubsection
@@ -70,7 +95,7 @@ export default function App() {
           ))}
         </article>
         <br />
-        <article className="w-3/5 mx-auto">
+        <article className="w-[92%] sm:w-4/5 md:w-4/5 lg:w-3/5 mx-auto">
           <SectionTitle>Skills</SectionTitle>
           {skills.map((skill, index) => (
             <div key={skill.category}>
@@ -80,6 +105,7 @@ export default function App() {
           ))}
         </article>
       </main>
+      <Toast message={toastMessage} />
     </div>
   )
 }
