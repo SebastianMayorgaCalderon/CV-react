@@ -21,8 +21,30 @@ export default function App() {
           <p>hecgonzalez1@gmail.com</p>
         </div>
       </header>
-      <main className="w-4/5 pt-[10rem]">
-        <h1>Hello World</h1>
+      <main className="w-4/5 pt-[10rem] ">
+        <article className="w-3/5 mx-auto">
+          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">About Me</h1>
+          <p className="text-[1.2rem] text-gray-700 leading-relaxed">
+            Full-stack developer with 5+ years of experience building and maintaining web and mobile applications across the JavaScript/TypeScript and
+            C#/.NET ecosystems. Strong hands-on background in Node.js, Express.js, React, Next.js, and C#/.NET Core (Entity Framework, APIs,
+            microservices), with working knowledge of Java/Spring Boot and Angular (MVC/MVVM, RxJS, NgRx). Experienced with Docker for
+            containerized development environments and GitHub Actions CI/CD pipelines. Comfortable working across the full development lifecycle:
+            architecture, REST API design, code review, unit testing, and mentoring.
+          </p>
+        </article>
+        <br />
+        <article className="w-3/5 mx-auto">
+          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">EDUCATION</h1>
+          <div>
+            <h3 className="text-[1rem] tracking-[0.1rem] font-bold text-black uppercase mb-4">Cenfotec University</h3>
+            <p className="text-[1.1rem] text-gray-600">2016 - 2025 | BS Computer Engineering Grad 2026</p>
+          </div>
+          <br />
+          <div>
+            <h3 className="text-[1rem] tracking-[0.1rem] font-bold text-black uppercase mb-4">BRAIN STATION PROGRAM</h3>
+            <p className="text-[1.1rem] text-gray-600">2019-2019 | Certificate Course in web development, worked with technologies such as ReactJS, Java, Springboot and  mongoDB, Node JS, Express js, Deno.</p>
+          </div>
+        </article>
       </main>
     </div>
   )
