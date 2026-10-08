@@ -1,5 +1,9 @@
 import './App.css'
-import ExpSubsection from './ExpSubsection'
+import ExpSubsection from './components/ExpSubsection'
+import SectionTitle from './components/SectionTitle'
+import EducationEntry from './components/EducationEntry'
+import SkillCategory from './components/SkillCategory'
+import ContactBlock from './components/ContactBlock'
 import experience from './experience.json'
 import education from './education.json'
 import skills from './skills.json'
@@ -13,21 +17,26 @@ export default function App() {
           <h3 className="text-[1.5rem] text-gray-300 tracking-[0.2rem] uppercase">Fullstack Developer<br />Frontend Specialist</h3>
         </div>
         <div className="contact-wrapper whitespace-nowrap text-left">
-          <h1 className="text-[2rem] tracking-[0.3rem] font-bold text-white uppercase mb-4">Contact</h1>
-          <p>+506 8761 5728</p>
-          <p>sebasmayorga7@gmail.com</p>
-          <p>sebasmayorga708@gmail.com</p>
-          <h1 className="text-[2rem] tracking-[0.3rem] font-bold text-white uppercase mt-8 mb-4">Referrals</h1>
-          <p>mauricio.poveda@gmail.com</p>
-          <p>ljpearly@gmail.com</p>
-          <p>brandonburtner@gmail.com</p>
-          <p>erica.durso@gmail.com</p>
-          <p>hecgonzalez1@gmail.com</p>
+          <ContactBlock
+            title="Contact"
+            lines={['+506 8761 5728', 'sebasmayorga7@gmail.com', 'sebasmayorga708@gmail.com']}
+          />
+          <ContactBlock
+            title="Referrals"
+            className="mt-8"
+            lines={[
+              'mauricio.poveda@gmail.com',
+              'ljpearly@gmail.com',
+              'brandonburtner@gmail.com',
+              'erica.durso@gmail.com',
+              'hecgonzalez1@gmail.com',
+            ]}
+          />
         </div>
       </header>
       <main className="w-4/5 pt-[10rem] ">
         <article className="w-3/5 mx-auto">
-          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">About Me</h1>
+          <SectionTitle>About Me</SectionTitle>
           <p className="text-[1.2rem] text-gray-700 leading-relaxed">
             Full-stack developer with 5+ years of experience building and maintaining web and mobile applications across the JavaScript/TypeScript and
             C#/.NET ecosystems. Strong hands-on background in Node.js, Express.js, React, Next.js, and C#/.NET Core (Entity Framework, APIs,
@@ -38,18 +47,17 @@ export default function App() {
         </article>
         <br />
         <article className="w-3/5 mx-auto">
-          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">EDUCATION</h1>
+          <SectionTitle>Education</SectionTitle>
           {education.map((edu, index) => (
             <div key={edu.institution}>
               {index > 0 && <br />}
-              <h3 className="text-[1.4rem] tracking-[0.1rem] font-bold text-black uppercase mb-4">{edu.institution}</h3>
-              <p className="text-[1.1rem] text-gray-600">{edu.details}</p>
+              <EducationEntry institution={edu.institution} details={edu.details} />
             </div>
           ))}
         </article>
         <br />
         <article className="w-3/5 mx-auto">
-          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">Experience</h1>
+          <SectionTitle>Experience</SectionTitle>
           {experience.map((exp) => (
             <ExpSubsection
               key={`${exp.company}-${exp.year}`}
@@ -63,16 +71,11 @@ export default function App() {
         </article>
         <br />
         <article className="w-3/5 mx-auto">
-          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">Skills</h1>
+          <SectionTitle>Skills</SectionTitle>
           {skills.map((skill, index) => (
             <div key={skill.category}>
               {index > 0 && <br />}
-              <ul className="list-disc pl-4 mb-4">
-                <li>
-                  <h3 className="text-[1.4rem] tracking-[0.1rem] font-bold text-black uppercase">{skill.category}</h3>
-                </li>
-              </ul>
-              <p className="text-[1.1rem] text-gray-600">{skill.items.join(', ')}</p>
+              <SkillCategory category={skill.category} items={skill.items} />
             </div>
           ))}
         </article>
