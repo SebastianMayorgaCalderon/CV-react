@@ -1,23 +1,23 @@
 [
   {
     "category": "Languages",
-    "items": ["JavaScript", "TypeScript", "C#", "Java", "SQL", "Python (foundational/scripting)"]
+    "items": ["JavaScript", "TypeScript", "C#", "Java", "SQL", "Python"]
   },
   {
     "category": "Frontend",
-    "items": ["React", "Redux", "React Hooks", "Next.js", "React Native", "Angular 19", "StoryBook", "Chromatic", "accessibility", "Figma"]
+    "items": ["React", "Redux", "React Hooks", "Next.js", "React Native", "StoryBooks", "Chromatic", "accessibility", "Figma", "Jest", "Playwright", "Expo"]
   },
   {
     "category": "Backend",
-    "items": ["Node.js", "Express.js", "Fastify", ".NET Core / .NET Framework / C# (ASP.NET)", "Entity Framework (code-first & database-first)", "Java / Spring Boot", "RESTful API design", "Redis"]
+    "items": ["Node.js", "Express.js", ".NET Core C#", "Entity Framework (code-first & database-first)", "Java / Spring Boot", "RESTful API design", "Redis", "api integration"]
   },
   {
     "category": "Databases",
-    "items": ["SQL Server", "PL/SQL", "stored procedures", "triggers", "functions", "migrations", "transactions", "NoSQL / non-relational databases (MongoDB)"]
+    "items": ["SQL Server", "PL/SQL", "MySql", "MSSQL", "stored procedures", "triggers", "functions", "migrations", "transactions", "NoSQL / non-relational databases (MongoDB)"]
   },
   {
     "category": "Tools & Infrastructure",
-    "items": ["Docker (local/dev environment containerization)", "Kubernetes", "GitHub Actions (CI/CD pipeline YAML authoring)", "CI/CD pipeline review & troubleshooting", "Git", "GraphQL", "Module Federation", "gRPC"]
+    "items": ["Docker (local/dev environment containerization)", "GitHub Actions (CI/CD pipeline YAML authoring)", "CI/CD pipeline review & troubleshooting", "Git", "GraphQL", "Module Federation", "gRPC", "NX"]
   },
   {
     "category": "Familiar With / Actively Learning",
@@ -26,5 +26,9 @@
   {
     "category": "Practices",
     "items": ["Unit Testing", "Code Review", "QA", "Design Thinking", "Agile collaboration", "Technical Mentoring"]
+  },
+  {
+    "category": "AI Tools",
+    "items": ["Cursor", "Claude Code", "Antigravity", "Windsurf"]
   }
 ]

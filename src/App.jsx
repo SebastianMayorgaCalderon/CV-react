@@ -63,11 +63,11 @@ export default function App() {
         <article className="w-[92%] sm:w-4/5 md:w-4/5 lg:w-3/5 mx-auto">
           <SectionTitle>About Me</SectionTitle>
           <p className="text-[1.2rem] text-gray-700 leading-relaxed">
-            Full-stack developer with 5+ years of experience building and maintaining web and mobile applications across the JavaScript/TypeScript and
-            C#/.NET ecosystems. Strong hands-on background in Node.js, Express.js, React, Next.js, and C#/.NET Core (Entity Framework, APIs,
-            microservices), with working knowledge of Java/Spring Boot and Angular (MVC/MVVM, RxJS, NgRx). Experienced with Docker for
-            containerized development environments and GitHub Actions CI/CD pipelines. Comfortable working across the full development lifecycle:
-            architecture, REST API design, code review, unit testing, and mentoring.
+            Full-stack developer with 7+ years of experience building and maintaining web and mobile applications across the JavaScript/TypeScript and
+            C#/.NET ecosystems. Strong hands-on background in Node.js, Express.js, React, React Native, Next.js and C#/.NET Core (Entity Framework,
+            APIs, microservices), with working knowledge of Java/Spring Boot and python. Experienced with Docker for containerized development
+            environments and GitHub Actions CI/CD pipelines. Comfortable working across the full development lifecycle: architecture, REST API
+            design, code review, unit testing, and mentoring.
           </p>
         </article>
         <br />

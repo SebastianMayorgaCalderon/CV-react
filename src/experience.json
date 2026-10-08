@@ -2,69 +2,100 @@
   {
     "year": "2023-2026",
     "company": "Gorilla Logic",
-    "position": "Mentor Senior Full-Stack Developer",
-    "techStack": "React, Next.js, Module Federation, Node.js, .NET Framework, Docker, GitHub Actions",
+    "position": "Mentor Full-Stack React Developer",
+    "techStack": "React, Next.js, Redux, Node.js, Docker, GitHub Actions, SQL",
     "tasks": [
-      "Develop full-stack features and architectural solutions spanning React/Next.js (Module Federation) on the frontend and Node.js microservices on the backend.",
-      "Learned the structure of an existing .NET Framework (C#) backend and built a small JWT-validation middleware to authorize or block requests based on token state.",
+      "Develop full-stack features and architectural solutions spanning React/Next.js, Redux on the frontend and Node.js microservices on the backend.",
+      "Learned the structure of an existing Node Js Express backend and built JWT-validation middleware to authorize or block requests based on token state.",
       "Use Docker to containerize and spin up local and multi-service development environments across projects, ensuring consistent setups across the team.",
       "Write and maintain GitHub Actions CI/CD pipeline YAML files, and review pipeline runs to diagnose and troubleshoot errors from previous deployments as part of an SOS production-support rotation.",
+      "Led cross-team code reviews on a shared codebase, keeping code consistent and maintainable and catching issues before they reached production.",
       "Mentor and onboard new developers, leading codebase walkthroughs and best-practice guidance across React, React Native, and Node.js.",
-      "Research emerging technologies and lead improvement initiatives to optimize client solutions."
+      "Research emerging technologies and lead improvement initiatives to optimize client solutions.",
+      "Drove cross-team collaboration to troubleshoot complex issues spanning multiple parts of the product, owning rapid hotfix releases to deliver critical fixes to production.",
+      "Optimized SQL stored procedures for better performance."
     ]
   },
   {
     "year": "2022-2023",
     "company": "Gorilla Logic",
-    "position": "React Consultant / Mentor",
-    "techStack": "React, Redux, Context, Node.js, React Native",
+    "position": "Fullstack Consultant / Mentor",
+    "techStack": "React, Next.js, Redux, Context, Node.js, Express, Prisma, MySQL",
     "tasks": [
-      "Led architecture and full-stack development of a new SingleOps client product using React, Redux, Context, and Node.js.",
+      "Led architecture and full-stack development of a new ScaledAgile SAFe client product using React, NextJs, Redux, Context, and Node Js Express Api, Prisma MySql.",
+      "Boosted application responsiveness by optimizing SQL stored procedures, reducing database load and query latency.",
       "Conducted code reviews and developed features across mobile (React Native) and web (React) platforms.",
-      "Served as the team's go-to React resource, driving architectural decisions and best practices."
+      "Served as the team's go-to React resource, driving architectural decisions and best practices.",
+      "Orchestrated releases of new CMS-powered pages with non-technical content teams, aligning content entry with development timelines for smooth, on-schedule launches.",
+      "Coordinated with non-technical teams to launch CMS-driven pages, aligning content and releases through Scrum and Kanban workflows.",
+      "Developed JavaScript injection scripts and CSS overrides to customize and integrate TI into the platform, matching its look and behavior to our product.",
+      "Drove code reviews across multiple teams working in a shared codebase, enforcing consistent standards and preventing defects from reaching production.",
+      "Improved SQL stored procedure performance by rewriting inefficient joins, adding targeted indexes, and reducing unnecessary data scans.",
+      "Automated build, test, and deployment workflows across GitHub Actions, Azure DevOps Pipelines, and GitLab CI, managing release branches, version tags, and environment promotions."
     ]
   },
   {
     "year": "2021-2022",
     "company": "Gorilla Logic",
     "position": "Software Developer",
-    "techStack": "React, Node.js, CSS, Ruby on Rails",
+    "techStack": "React, Node.js, Express, Angular, Playwright, Ruby on Rails",
     "tasks": [
-      "Delivered new features and solutions for the SingleOps client using React JS and Node JS in collaboration with multiple teams.",
-      "Led migration of a legacy Ruby on Rails platform to a React and CSS-based solution, following established design patterns."
+      "Delivered new features and solutions for the SingleOps client using React JS, hooks and Node Js Express in collaboration with multiple teams.",
+      "Led migration of a legacy Ruby on Rails platform to a React and CSS-based solution, following established design patterns.",
+      "Oversaw cross-team code reviews in a common codebase, promoting clean, maintainable code and identifying bugs early in the development cycle.",
+      "Led the incremental migration of a legacy Rails application to Angular and built new features in the new stack, improving maintainability and user experience.",
+      "Collaborated with QA to validate the migrated application against existing Playwright end-to-end tests, maintaining feature parity and preventing regressions.",
+      "Delivered a refreshed UI in close collaboration with UX, managing the legacy and new experiences side by side through feature flags for incremental releases.",
+      "Resolved critical production issues in an on-call rotation, including restoring user permissions lost during server data parsing and re-implementing the Google Maps module to fix a long-standing bug.",
+      "Took responsibility for shipping code to production, managing semantic versioning, release tagging, and automated deployments across three CI/CD platforms."
     ]
   },
   {
     "year": "2021-2021",
     "company": "Proximity",
     "position": "Full-Stack Developer / React Mentor",
-    "techStack": "React, React Hooks, Node.js, Express.js, .NET Core",
+    "techStack": "React, Node.js, Express, Angular, TypeScript",
     "tasks": [
-      "Designed and implemented web applications and backend services using React, React Hooks, Node.js, Express.js, and .NET Core across multiple client projects.",
+      "Designed and implemented web applications and backend services using React, Node Js, Express, across multiple client projects.",
       "Built scalable, maintainable architectural solutions to improve system performance and reliability.",
-      "Mentored team members in React, JavaScript, Node.js, and Express.js."
+      "Mentored team members in Angular, JavaScript, Typescript, Node.js, and Express.js.",
+      "Delivered new product features in close partnership with design, QA, and product teams, adapting quickly to changing priorities.",
+      "Guided code reviews across teams sharing a codebase, upholding unified standards and catching defects before deployment.",
+      "Owned features end to end, from proof of concept through deployment to production.",
+      "Resolved complex production bugs as part of an on-call SOS rotation, restoring functionality quickly for affected users.",
+      "Led an authorization refactor to align with a new endpoint architecture, improving security and maintainability.",
+      "Configured and maintained CI/CD pipelines in GitHub Actions, Azure DevOps, and GitLab CI to automate builds, tests, versioning, and deployments.",
+      "Diagnosed slow-running stored procedures with execution plans and applied query and index optimizations to improve response times."
     ]
   },
   {
     "year": "2020-2020",
     "company": "One Consulting Group",
     "position": "Full-Stack Lead Developer / Architect",
-    "techStack": "Node.js, Express.js, React, TypeScript",
+    "techStack": "Node.js, Express.js, React, TypeScript, C# .NET Core",
     "tasks": [
       "Architected and developed a digital solution bringing the Cafsa client's business model online using Node.js, Express.js, and React with TypeScript.",
-      "Designed modular architecture and developed unit and integration tests for new functionality."
+      "Designed modular architecture and developed unit and integration tests for new functionality.",
+      "Conceptualized and designed a multi-system solution that let a client shift operations online during the pandemic, defining the integration architecture across cloud services and purpose-specific APIs.",
+      "Architected the backend, including a middleware API for cloud service communication and a modular C# .NET Core API powering the main product.",
+      "Owned the client-facing React web application end to end, from UX design and front-end architecture to development and release.",
+      "Showcased the product to leadership through live demos, highlighting user workflows and service traffic analytics to support business decisions.",
+      "Owned the release process for multiple services, from versioning to production deployment, through CI/CD pipelines on GitHub, Azure DevOps, and GitLab."
     ]
   },
   {
     "year": "2019-2020",
     "company": "Konrad Group",
     "position": "Software Developer",
-    "techStack": "C#, .NET Core, Entity Framework, React JS, TypeScript, SCSS, AEM 6.4, Node.js, React Native",
+    "techStack": "Node.js, Express, Prisma, React, TypeScript, SCSS, React Native",
     "tasks": [
-      "Built C# / .NET Core APIs and microservices, using Entity Framework for both code-first (class-to-database) and database-first (database-to-class) modeling, including migrations, transactions, stored procedures, triggers, and functions.",
-      "Built and maintained marketing-facing web applications for Loblaws and Shoppers Drug Mart using React JS, TypeScript, SCSS, AEM 6.4, Node.js, and .NET Core, developing new features against design-team specs.",
-      "Delivered React Native mobile applications and React JS web portals for multiple clients, including Loblaws, EQBank, and Shoppers Drug Mart.",
-      "Performed code reviews and unit testing to ensure product quality across client deliverables."
+      "Node Express APIs and microservices, using Prisma for both code-first (class-to-database) and database-first (database-to-class) modeling, including migrations, transactions, stored procedures, triggers, and functions.",
+      "Built and maintained marketing-facing web applications for Loblaws and Shoppers Drug Mart using React, TypeScript, SCSS, developing new features against design-team specs.",
+      "Delivered React Native mobile applications and React JS web portals for multiple clients, including Loblaws, EQBank, and Shoppers Mart.",
+      "Performed code reviews and unit testing to ensure product quality across client deliverables.",
+      "Built new front-end features and connect them to newly developed API endpoints, extending the web application's functionality.",
+      "Built end-to-end test suites covering multiple services and products, improving reliability and catching regressions before release.",
+      "Coordinated with engineering teams on testing best practices and worked with product owners to plan manual testing and manage releases."
     ]
   }
 ]

@@ -1,10 +1,18 @@
 [
   {
     "institution": "Cenfotec University",
-    "details": "2016 - 2025 | BS Computer Engineering Grad 2026"
+    "details": "2016 - 2026 | BS, Computer Science"
   },
   {
     "institution": "Brain Station Program",
-    "details": "2019-2019 | Certificate Course in web development, worked with technologies such as ReactJS, Java, Springboot and mongoDB, Node JS, Express js, Deno."
+    "details": "2019 | Web Development Certificate Program - React, C#, .NET Core, MongoDB, Node.js, Express.js, Deno"
+  },
+  {
+    "institution": "Angular Fundamentals (Udemy, self-paced)",
+    "details": "2019 | Angular 8, MVC/MVVM, RxJS"
+  },
+  {
+    "institution": "C# / .NET Core (Udemy, self-paced)",
+    "details": "2020"
   }
 ]
