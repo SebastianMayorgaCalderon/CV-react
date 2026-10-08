@@ -1,9 +1,11 @@
 import './App.css'
+import ExpSubsection from './ExpSubsection'
+import experience from './experience.json'
 
 export default function App() {
   return (
     <div className="flex min-h-screen">
-      <header className="w-1/5 bg-black flex flex-col items-center justify-between text-white pt-[8rem] pb-[4rem]">
+      <header className="w-1/5 bg-black flex flex-col items-center justify-between text-white pt-[8rem] pb-[4rem] sticky top-0 h-screen">
         <div className="developer-Name-wrapper rotate-270 whitespace-nowrap text-right mt-36">
           <h1 className="text-[3.8rem] leading-[3.5rem] tracking-[0.5rem] font-bold">SEBASTIAN<br />MAYORGA</h1>
           <h3 className="text-[1.5rem] text-gray-300 tracking-[0.2rem] uppercase">Fullstack Developer<br />Frontend Specialist</h3>
@@ -44,6 +46,20 @@ export default function App() {
             <h3 className="text-[1rem] tracking-[0.1rem] font-bold text-black uppercase mb-4">BRAIN STATION PROGRAM</h3>
             <p className="text-[1.1rem] text-gray-600">2019-2019 | Certificate Course in web development, worked with technologies such as ReactJS, Java, Springboot and  mongoDB, Node JS, Express js, Deno.</p>
           </div>
+        </article>
+        <br />
+        <article className="w-3/5 mx-auto">
+          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">Experience</h1>
+          {experience.map((exp) => (
+            <ExpSubsection
+              key={`${exp.company}-${exp.year}`}
+              year={exp.year}
+              company={exp.company}
+              position={exp.position}
+              techStack={exp.techStack}
+              tasks={exp.tasks}
+            />
+          ))}
         </article>
       </main>
     </div>
