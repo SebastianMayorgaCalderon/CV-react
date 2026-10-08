@@ -1,6 +1,8 @@
 import './App.css'
 import ExpSubsection from './ExpSubsection'
 import experience from './experience.json'
+import education from './education.json'
+import skills from './skills.json'
 
 export default function App() {
   return (
@@ -37,15 +39,13 @@ export default function App() {
         <br />
         <article className="w-3/5 mx-auto">
           <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">EDUCATION</h1>
-          <div>
-            <h3 className="text-[1rem] tracking-[0.1rem] font-bold text-black uppercase mb-4">Cenfotec University</h3>
-            <p className="text-[1.1rem] text-gray-600">2016 - 2025 | BS Computer Engineering Grad 2026</p>
-          </div>
-          <br />
-          <div>
-            <h3 className="text-[1rem] tracking-[0.1rem] font-bold text-black uppercase mb-4">BRAIN STATION PROGRAM</h3>
-            <p className="text-[1.1rem] text-gray-600">2019-2019 | Certificate Course in web development, worked with technologies such as ReactJS, Java, Springboot and  mongoDB, Node JS, Express js, Deno.</p>
-          </div>
+          {education.map((edu, index) => (
+            <div key={edu.institution}>
+              {index > 0 && <br />}
+              <h3 className="text-[1.4rem] tracking-[0.1rem] font-bold text-black uppercase mb-4">{edu.institution}</h3>
+              <p className="text-[1.1rem] text-gray-600">{edu.details}</p>
+            </div>
+          ))}
         </article>
         <br />
         <article className="w-3/5 mx-auto">
@@ -59,6 +59,21 @@ export default function App() {
               techStack={exp.techStack}
               tasks={exp.tasks}
             />
+          ))}
+        </article>
+        <br />
+        <article className="w-3/5 mx-auto">
+          <h1 className="text-[2rem] tracking-[0.2rem] font-bold text-black uppercase mb-4">Skills</h1>
+          {skills.map((skill, index) => (
+            <div key={skill.category}>
+              {index > 0 && <br />}
+              <ul className="list-disc pl-4 mb-4">
+                <li>
+                  <h3 className="text-[1.4rem] tracking-[0.1rem] font-bold text-black uppercase">{skill.category}</h3>
+                </li>
+              </ul>
+              <p className="text-[1.1rem] text-gray-600">{skill.items.join(', ')}</p>
+            </div>
           ))}
         </article>
       </main>
