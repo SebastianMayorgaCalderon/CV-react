@@ -22,7 +22,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex min-h-screen overflow-x-hidden">
+    <div className="flex min-h-screen">
       <HamburgerButton open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
       {menuOpen && (
         <div
