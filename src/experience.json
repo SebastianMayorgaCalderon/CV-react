@@ -89,9 +89,8 @@
     "position": "Software Developer",
     "techStack": "Node.js, Express, Prisma, React, TypeScript, SCSS, React Native",
     "tasks": [
-      "Node Express APIs and microservices, using Prisma for both code-first (class-to-database) and database-first (database-to-class) modeling, including migrations, transactions, stored procedures, triggers, and functions.",
       "Built and maintained marketing-facing web applications for Loblaws and Shoppers Drug Mart using React, TypeScript, SCSS, developing new features against design-team specs.",
-      "Delivered React Native mobile applications and React JS web portals for multiple clients, including Loblaws, EQBank, and Shoppers Mart.",
+      "Delivered React Native mobile applications and React JS web portals for multiple clients.",
       "Performed code reviews and unit testing to ensure product quality across client deliverables.",
       "Built new front-end features and connect them to newly developed API endpoints, extending the web application's functionality.",
       "Built end-to-end test suites covering multiple services and products, improving reliability and catching regressions before release.",
