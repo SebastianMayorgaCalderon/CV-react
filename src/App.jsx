@@ -26,20 +26,20 @@ export default function App() {
       <HamburgerButton open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
       {menuOpen && (
         <div
-          className="fixed inset-0 z-40 bg-black/50 md:hidden"
+          className="fixed inset-0 z-40 bg-black/50 lg:hidden"
           onClick={() => setMenuOpen(false)}
         />
       )}
       <header
-        className={`bg-black flex flex-col items-center justify-between text-white pt-[8rem] pb-[4rem] fixed top-0 left-0 z-50 h-screen w-4/5 transition-transform duration-300 ease-in-out md:sticky md:z-auto md:w-1/5 md:translate-x-0 ${
+        className={`sidebar bg-black flex flex-col items-center justify-between text-white pt-[4em] pb-[2em] lg:pt-[8em] lg:pb-[4em] overflow-y-auto fixed top-0 left-0 z-50 h-dvh w-4/5 transition-transform duration-300 ease-in-out lg:sticky lg:z-auto lg:w-1/4 xl:w-1/5 lg:translate-x-0 ${
           menuOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
-        <div className="developer-Name-wrapper rotate-270 whitespace-nowrap text-right mt-36">
-          <h1 className="text-[3.8rem] leading-[3.5rem] tracking-[0.5rem] font-bold">SEBASTIAN<br />MAYORGA</h1>
-          <h3 className="text-[1.5rem] text-gray-300 tracking-[0.2rem] uppercase">Fullstack Developer<br />Frontend Specialist</h3>
+        <div className="developer-Name-wrapper rotate-270 whitespace-nowrap text-right shrink-0 mt-[7em] mb-[8em] lg:mt-[9em]">
+          <h1 className="text-[3.8em] leading-[0.92] tracking-[0.13em] font-bold">SEBASTIAN<br />MAYORGA</h1>
+          <h3 className="text-[1.5em] text-gray-300 tracking-[0.13em] uppercase">Fullstack Developer<br />Frontend Specialist</h3>
         </div>
-        <div className="contact-wrapper whitespace-nowrap text-left">
+        <div className="contact-wrapper whitespace-nowrap text-left shrink-0">
           <ContactBlock
             title="Contact"
             lines={['+506 8761 5728', 'sebasmayorga7@gmail.com', 'sebasmayorga708@gmail.com', 'github.com/SebastianMayorgaCalderon']}
@@ -47,7 +47,7 @@ export default function App() {
           />
           <ContactBlock
             title="Referrals"
-            className="mt-8"
+            className="mt-[2em]"
             onEmailClick={handleCopyEmail}
             lines={[
               'mauricio.poveda@gmail.com',
@@ -59,7 +59,7 @@ export default function App() {
           />
         </div>
       </header>
-      <main className="w-full md:w-4/5 pt-[10rem] pb-[10rem]">
+      <main className="w-full lg:w-3/4 xl:w-4/5pt-[10rem] pb-[10rem]">
         <article className="w-[92%] sm:w-4/5 md:w-4/5 lg:w-3/5 mx-auto">
           <SectionTitle>About Me</SectionTitle>
           <p className="text-[1.2rem] text-gray-700 leading-relaxed">

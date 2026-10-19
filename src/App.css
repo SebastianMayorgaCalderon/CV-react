@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+html {
+  font-size: clamp(12px, 9px + 0.9vw, 16px);
+}
+
+/* Sidebar contents are sized in em so they scale with the viewport to always fit */
+.sidebar {
+  font-size: max(10px, min(1.75dvh, 4.4vw, 16px));
+}
+
+@media (min-width: 64rem) {
+  .sidebar {
+    font-size: max(10px, min(1.5dvh, 1.39vw, 16px));
+  }
+}
+
+@media (min-width: 80rem) {
+  .sidebar {
+    font-size: max(10px, min(1.5dvh, 1.1vw, 16px));
+  }
+}
+
 .underline-from-center {
   position: relative;
   width: fit-content;

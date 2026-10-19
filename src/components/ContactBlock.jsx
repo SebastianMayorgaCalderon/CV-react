@@ -1,7 +1,7 @@
 export default function ContactBlock({ title, lines, className = '', onEmailClick }) {
   return (
     <div className={className}>
-      <h1 className="text-[2rem] tracking-[0.3rem] font-bold text-white uppercase mb-4">{title}</h1>
+      <h1 className="text-[2em] tracking-[0.15em] font-bold text-white uppercase mb-[0.5em]">{title}</h1>
       {lines.map((line) => {
         const isEmail = line.includes('@')
         const isLink = line.includes('github.com')
