@@ -23,6 +23,7 @@ export default function App() {
 
   return (
     <div className="flex min-h-screen">
+      <div className="fixed top-0 inset-x-0 z-30 h-18 bg-white lg:hidden" />
       <HamburgerButton open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
       {menuOpen && (
         <div
